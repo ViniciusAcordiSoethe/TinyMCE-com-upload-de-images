@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de imagem no tinyMCE</title>
+    <script src="tinymce/tinymce.min.js"></script>
+    <script>
+    tinymce.init({
+        selector: '#uploaddeimagens',
+        height: 600,
+        plugins: 'code image',
+        toolbar: 'undo redo | image code',
+        images_upload_url: 'upload.php',
+        images_reuse_filename: false,
+    })    
+    </script>
+</head>
+<body>
+    <textarea id="uploaddeimagens"></textarea>
+</body>
+</html>
