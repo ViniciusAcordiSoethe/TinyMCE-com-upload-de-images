@@ -54,7 +54,7 @@
     // aqui foi feita uma mofificação 
     $extensao = strrchr($temp['name'], '.');// aqui pega a extenção da imagem
     $extensao = strtolower($extensao);//aqui coloca a extenção da imagem em caixa baixa
-    $novoNome = md5(microtime()) . '.' . $extensao;// aqui coloca o nome para não se repetir
+    $novoNome = md5(microtime()) . $extensao;// aqui coloca o nome para não se repetir
     // aqui foi feita uma mofificação 
     
     $filetowrite = $imageFolder . $novoNome;
