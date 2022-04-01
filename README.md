@@ -1,3 +1,3 @@
 # TinyMCE-com-upload-de-images
 
-Feito com UMA api em JavaScript
+Feito com uma api em JavaScript
